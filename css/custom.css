@@ -1,7 +1,13 @@
 
+.container-form {width: 70%; margin:15% auto;}
+
+.under {
+    border-bottom: 1px solid #aaa;
+}
+
 .datos { margin-top: 30px;}
 .improductividad { margin-top: 30px; color: red;}
-.solucion {margin-top: 30px; color: forestgreen;}
+.solucion {margin-top: 30px; color: #fff;}
 
-.salarios_titulos {margin-top:7px; text-align:center; font-weight:bold; color: darkblue;}
-.salarios_txt {margin-top:7px; text-align:center;}
+.salarios_titulos { text-align:right; color: #fff; }
+.salarios_txt {text-align:center;}

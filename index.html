@@ -5,18 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Functions -->
-    <script type="text/javascript" src="js/app.js"></script>
+
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+
     
     <title>Calculadora de Improductividad</title>
 
@@ -25,144 +20,45 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12"><img src="img/banner.png" class="img-responsive"> </div>
+            <h1 style="font-family: 'Muli', sans-serif; text-align: center;">&#191;QUIERES SABER CU&Aacute;NTO TIEMPO PIERDEN TUS EMPLEADOS<br>EN INTERNET Y <b>CU&Aacute;NTO TE EST&Aacute; COSTANDO?</b></h1><br>
+            <p style="font-size: 18px; text-align: center;">ES MUY F&Aacute;CIL CON LA CALCULADORA M&Aacute;GICA DE SAINT</p>
+            <p>&nbsp;</p>
+            <div class="col-md-12"><img src="img/banner.png" width="800" height="362" style="display: block; margin:0 auto;"> </div>
+            <p>&nbsp;</p>
+            <div class="col-md-12 text-center">
+                <a class="js-scroll-trigger text-uppercase" style="font-size: 18px; font-weight: bold; text-decoration: none;" href="#down">Calcular
+                <br/><i class="fa fa-angle-down fa-4x" style="color:#23527c;" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="container-fluid" style="background-color:#95c5db; height: 100%;">
         <div class="row">
-            <section>
-                <div class="col-md-12 datos">
-                    <div class="form-horizontal">
-                        <div class="form-group">
-                            <p for="empleados" class="col-sm-7 control-label">¿Cuantos de sus empleados trabajan directamente en una computadora con Internet?</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <input type="text" id="empleados" class="form-control">
-                                </div>
-                                <div class="col-sm-2">
-                                    <button id="calcular">Calcular</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Horas promedio de ocio diarias en Internet durante Jornada Laboral en México:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <p style=" text-aligh:center; margin-top:7px;">1.4</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <p>&nbsp;</p>
-                        <p class="text-right">Salario Promedio en México: <br />(Opcional, introducir salario promedio de la empresa)</p>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <p class="salarios_titulos" for="">Mensual</p>
-                                <input type="text" class="form-control text-center" id="salarioMensual">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <p class="salarios_titulos">Día</p>
-                                <p class="salarios_txt" id="salarioDias"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <p class="salarios_titulos">Salario por Hora</p>
-                                <p class="salarios_txt" id="salarioHoras"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section>
-                <div class="col-md-12 improductividad">
-                    <h2 class="text-center">COSTO DE IMPRODUCTIVIDAD EN SU ORGANIZACI&Oacute;N</h2>
-                    <div class="form-horizontal">
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Horas desperdiciadas en su empresa cada día:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <p style="margin-top:7px; text-align:center;" id="horasDesperdiciadas"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Costo Diario:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <p style="margin-top:7px; text-align:center;" id="costoDiario"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Costo Mensual:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <p style="margin-top:7px; text-align:center;" id="costoMensual"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Costo Anual:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-2">
-                                    <p style="margin-top:7px; text-align:center;" id="costoAnual"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section>
-                <div class="col-md-12 solucion">
-                    <h2 class="text-center">SOLUCI&Oacute;N RECOMENDADA</h2>
-                    <div class="form-horizontal">
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Web Filter SWF100 con licencia para:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-6">
-                                    <p style="margin-top:7px;" id="solucion"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Inversión:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-4">
-                                    <p style="margin-top:7px;" id="inversion"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Retorno de Inversión (ROI):</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-4">
-                                    <p style="margin-top:7px;" id="roi"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <p for="" class="col-sm-7 control-label">Beneficio anual en términos de productividad:</p>
-                            <div class="col-sm-5">
-                                <div class="col-xs-4">
-                                    <p style="margin-top:7px;" id="benAnual"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div id="down">
+                <h3 class="text-uppercase text-center">Para iniciar solamente tienes que ingresar <br /> tu nombre, nombre de tu empresa y correo:</h3>
+                <p>&nbsp;</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+<div id="saint_5759180434571264" class="agile_crm_form_embed "><span style="display:none">Fill out my <a href="https://saint.agilecrm.com/forms/5759180434571264">online form</a></span></div>
+                <p>&nbsp;</p>
+            </div>
         </div>
     </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    
+    <script id="_agile_min_js" async type="text/javascript" src="https://saint.agilecrm.com/stats/min/agile-min.js"> </script>
+<script type="text/javascript" >
+var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){_agile.set_account('9f9gho7notdhfdffptpk5l1h0', 'saint');
+_agile.track_page_view();};
+</script>
 </body>
 
 </html>
