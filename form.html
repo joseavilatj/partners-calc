@@ -45,12 +45,15 @@
                     </div>
                     <div class="col-md-2">
                         <input type="text" class="form-control text-center" pattern="[0-9]*" id="numero" placeholder="Eje: 11282" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Eje: 11282'">
-                        <input type="hidden" id="salarioMensual">
+                        <input type="hidden" id="salarioMensual" value="11282">
+                        <span style="color:red;font-size: 12px;">* Si se deja vacio se usar&aacute; por defecto 11,282.00</span>
                     </div>
                     <div class="col-md-1">
                         <label style="margin-top: 5px;">MXN.</label>
                     </div>
-                    <div class="col-md-4 col-md-offset-4"><button class="btn btn-default btn-lg btn-block text-uppercase" style="font-size: 24px; font-weight: bold;" id="calcular">Calcular</button>
+                    <div class="col-md-4 col-md-offset-4">
+                        <span id="alertaCero" style="display:none">Para poder ofrecerte un c&aacute;lculo mas acertado, por favor ingresa valores mayores a 0</span>
+                        <button class="btn btn-default btn-lg btn-block text-uppercase" style="font-size: 24px; font-weight: bold;" id="calcular">Calcular</button>
                         <p>&nbsp;</p>
                     </div>
                 </div>
